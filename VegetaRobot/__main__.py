@@ -67,7 +67,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-───「 [Vegeta The Robot](https://telegra.ph/file/0c48783bf8a446a82b30d.jpg) 」───
+───「 [Steam Robot](https://telegra.ph/file/122c6f9823106b704da12.png) 」───
 *Whassup! {},*
 *I am an Anime themed advance group management bot with a lot of New Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -82,12 +82,12 @@ buttons = [
                         InlineKeyboardButton(
                             text="Add Me ⚡",
                             url="t.me/VegetaRobot?startgroup=true"),
-                       InlineKeyboardButton(text="Bot Support ⚡", url="t.me/vegetaSupport"),
+                       InlineKeyboardButton(text="Bot Support ⚡", url="t.me/Anant_Goel"),
                     ],
                    [
                        InlineKeyboardButton(text="🔐 Help ", callback_data="help_back"),
-                       InlineKeyboardButton(text="📊 Network", url="t.me/pegasusNetworkofficial"),
-                       InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
+                       InlineKeyboardButton(text="📊 Network", url="t.me/Anant_Goel"),
+                       InlineKeyboardButton(text="🔔 Logs", url="t.me/PcGamesAllForFree"),
                      ],
                     [                  
                        InlineKeyboardButton(
@@ -95,7 +95,7 @@ buttons = [
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="https://t.me/PegasusUpdates")
+                             url="https://t.me/PcGamesAllForFree")
                      ], 
     ]
 
@@ -114,9 +114,9 @@ For all command use / [or](https://telegra.ph/file/0f0f7185cdade57251329.jpg) !
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """Contact to **@PegasuaSupportofficial**"""
-HELP_IMG= "https://telegra.ph/file/9d2c6e3b28afe7619856e.jpg"
-PM_PHOTO= "https://telegra.ph/file/374d0887609fc70e093bd.mp4"
+DONATE_STRING = """Contact to **@fantasticyash**"""
+HELP_IMG= "https://telegra.ph/file/122c6f9823106b704da12.png"
+PM_PHOTO= "https://telegra.ph/file/122c6f9823106b704da12.png"
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -346,8 +346,8 @@ def vegeta_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Spidey's licensed under the GNU General Public License v3.0_
-                 Here is the [Repository](https://github.com/DCOwnerNo1/SpideyRobot).
-                 If you have any question about Spidey, let us know at @PigasusSupport.""",
+                 Here is the [Repository](https://t.me/PcGamesAllForFree).
+                 If you have any question about Spidey, let us know at @PcGamesAllForFree.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -591,7 +591,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@VegetaSupport","[Back Online (:](https://telegra.ph/file/d3db0babad0d1729c5f59.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@PcGamesAllForFree","[Back Online (:](https://telegra.ph/file/122c6f9823106b704da12.png)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
